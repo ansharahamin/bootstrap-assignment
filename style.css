@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    margin: 0;
+
+    background-color: #F5F5F5;
+}
+
+nav {
+    background-color: #EBF1FF;
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ji {
+
+    background-color: #EBF1FF;
+}
+
+.mynav {
+    background-color: #EBF1FF;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.mybtn {
+    background-color: #EBF1FF;
+    border-top: 5px solid #23E5DB;
+    border-right: 5px solid #3A77FF;
+    border-bottom: 5px solid #FFCE32;
+    border-left: 5px solid #23E5DB;
+    ;
+    color: #000000;
+
+    border-radius: 40px;
+    font-size: 12x;
+    cursor: pointer;
+    width: 100px;
+    height: 50px
+}
+
+.mybtn:hover {
+    background-color: #adbcdb;
+    color: #FFFFFF;
+    border: 5px solid #3A77FF;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+
+}
+
+a:hover {
+    color: #3A77FF !important;
+
+}
+
+.mylist {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.log {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end !important;
+
+}
+
+.my {
+
+    text-decoration: underline;
+
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.mysrbtn {
+    background-color: #002F34;
+    color: #FFFFFF;
+    width: 200px !important;
+    outline: none !important;
+    border: 1px groove black !important;
+
+
+}
+
+.mysrbtn:hover {
+    background-color: #5188ff8a;
+
+}
+
+.nav-parent {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center;
+    flex-direction: row;
+}
+
+.srch-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.serch-brar {
+
+    margin-left: 20px;
+    border: 1px solid #000000 !important;
+
+}
+
+label:focus {
+    border: 1px solid #007bff !important;
+    /* or any other color you like */
+    outline: none;
+}
+
+.my-loc, .mydrp-down {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+}
+
+.mydrp-down {
+    flex-shrink: 2;
+    width: 200px;
+    border: 1px groove black !important;
+    background-color: #FFFFFF !important    ;
+}
+.hrt:hover{
+    color: red;
+}
+.tweet{
+    display: inline-block;
+}
+footer,footer a{
+    color: #002F34 !important;
+}
+footer a:hover{
+    color:#002f3462 !important;
+}
+.my-para{
+    text-align: right;
+}
+  .social-parent{
+
+  }
+@media only screen and (max-width: 1000px) {
+
+    .mynav {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mylist,
+    .log {
+        margin: 10px 0;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .mybtn {
+
+        text-align: center;
+    }
+
+    .my {
+        font-size: 14px;
+    }
+
+    .input-srch {
+        width: 250px;
+        margin: 10px 0;
+        height: 40px;
+         
+    }
+
+    .btn-sch {
+        width: 90px;
+        margin-top: 10px;
+        height: 40px;
+
+    }
+
+    .mydrp-down {
+        width: 250px;
+        margin: 0,auto;
+        height: 40px;
+        
+    }
+
+    .my-toggle2 {
+        text-align: center;
+    }
+
+.my-nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.crd-mq{
+    font-size: 16px;
+}
+
+
+}

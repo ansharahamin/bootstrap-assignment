@@ -1,0 +1,1371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <script src="https://kit.fontawesome.com/a6450bd60a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            /* This bit sets up the horizontal layout */
+            display: flex;
+            flex-direction: row;
+            ;
+            /* This bit draws the box around it */
+
+
+            /* I've used padding so you can see the edges of the elements. */
+            padding: 1px;
+        }
+
+        input,
+        .mydrp-down,
+        .my-loc {
+            /* Tell the input to use all the available space */
+            /* flex-grow:2; */
+            /* And hide the input's outline, so the form looks like the outline */
+            border: 1px solid black;
+            outline: none;
+        }
+
+        /* remove the input focus blue box, it will be in the wrong place. */
+        input:focus,
+        .mydrp-down:active,
+        {
+        /* This bit draws the box around the input */
+        /* I've used padding so you can see the edges of the elements. */
+        padding: 1px;
+        /* This bit draws the box around the input */
+        /* I've used padding so you can see the edges of the elements. */
+        border: 1px solid rgb(89, 70, 255) !important;
+        outline: none;
+        }
+
+
+        /* Add the focus effect to the form so it contains the button */
+        form:focus-within {
+            ;
+
+        }
+
+        button {
+            /* Just a little styling to make it pretty */
+
+            background: #002F34;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-fluid ji">
+            <div class="container">
+
+
+
+
+
+                <nav class="navbar navbar-expand-lg mynav">
+                    <div class="container">
+                        <a class="navbar-brand" href="#"><img src="./image/olx-svgrepo-com.svg" alt=""></a>
+                        <button class="navbar-toggler my-Toggle" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"><img width="50px"
+                                            src="https://www.olx.com.pk/assets/iconMotors.6bf280165e43e55b173d0a53551e2bfb.png"
+                                            alt="car">motors</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img width="35px"
+                                            src="https://www.olx.com.pk/assets/iconProperty.d09c6d2e3621f900c17c9e8330a1a37b.png"
+                                            alt="">Property</a>
+                                </li>
+
+                        </div>
+                    </div>
+
+
+                    </ul>
+                    <ul class="log">
+                        <li class="mylist my"><a href="">login</a></li>
+                        <li class="mylist"><button class="mybtn"><a href=""><i
+                                        class="fa-solid fa-plus"></i>sell</a></button></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+
+        <div class="container my-container mt-2">
+
+            <div class="input-group mb-3">
+                <label class="input-group-text mydrp-down" for="inputGroupSelect01"><img width="20px"
+                        src="./image/Screenshot 2025-07-18 174515.png" alt="">
+                    <select class="form-select my-loc" id="inputGroupSelect01">
+                        <option selected disabled><img
+                                src="/assets/iconLocationGradient_noinline.ec45db16ede268cd2719a09f0d10437f.svg"
+                                alt="Current location icon" class="_11b2c2ae _8a6d45a9">pakistan</option>
+                        <option value="1">Lahore-punjab</option>
+                        <option value="2">karachi-sindh</option>
+                        <option value="3">pishawar-kpk</option>
+                        <option value="3">balochistan-quetta</option>
+                    </select>
+                </label>
+                <!--    
+            <form class="d-flex" role="search">
+              <div class="srch-parent">
+              <input class="form-control me-2 serch-brar" type="search" placeholder="find cars,mobile phones and more" aria-label="Search"/> 
+
+              <button class="btn btn-outline-success py-2 mysrbtn " type="submit"><i class="fa-solid fa-magnifying-glass"></i>  Search</button>
+              </div>
+           </form> -->
+                <form>
+                    <input size="90px" class="ms-2 input-srch" type="search"
+                        placeholder="find cars,mobile phones and more" />
+                    <button class="btn-sch"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                </form>
+            </div>
+
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon d-flex justify-content-center text-center my-toggle2"></span>
+                </button>
+                <div class="collapse navbar-collapse fw-normal ms-3" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                all categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#mobile">mobile phones</a></li>
+                                <li><a class="dropdown-item" href="#">laptops</a></li>
+                                <li><a class="dropdown-item" href="#">tablets</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#cars">cars</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#motorcycle">motorcycles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#house">houses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vedio-audios">video-audios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tablet">tablets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lands and plot">lands and plots</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">houses</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <div class="e9ca3eea">
+        <div class="_5c85c0ba fw-normal" aria-label="Categories">
+          <div class="_29123282 fw-normal">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/mobiles_c1411" class="_457e0fa6 fw-bold">Mobiles</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/mobile-phones_c1453" class="_457e0fa6 fw-normal">Mobile
+                Phones</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/accessories_c1457"
+                class="_457e0fa6 fw-normal">Accessories</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/smart-watches_c1458" class="_457e0fa6 fw-normal">Smart
+                Watches</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/tablets_c1455" class="_457e0fa6 fw-normal">Tablets</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/landline-phones_c1459" class="_457e0fa6 fw-normal">Landline
+                Phones</a></div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/vehicles_c5" class="_457e0fa6 fw-bold">Vehicles</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/cars_c84" class="_457e0fa6 fw-normal">Cars</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/spare-parts_c82" class="_457e0fa6 fw-normal">Spare Parts</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/cars-accessories_c2027" class="_457e0fa6 fw-normal">Cars
+                Accessories</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/car-care_c709100" class="_457e0fa6 fw-normal">Car Care</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/buses-vans-trucks_c85" class="_457e0fa6 fw-normal">Buses,
+                Vans &amp; Trucks</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/rickshaw-chingchi_c2026" class="_457e0fa6 fw-normal">Rickshaw
+                &amp; Chingchi</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/tractors-trailers_c1951" class="_457e0fa6 fw-normal">Tractors
+                &amp; Trailers</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/oil-lubricants_c708999" class="_457e0fa6 fw-normal">Oil &amp;
+                Lubricants</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/cars-on-installments_c86" class="_457e0fa6 fw-normal">Cars on
+                Installments</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/other-vehicles_c80" class="_457e0fa6 fw-normal">Other
+                Vehicles</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/boats_c1950" class="_457e0fa6 fw-normal">Boats</a></div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/property-for-sale_c2" class="_457e0fa6 fw-normal">Property
+                for Sale</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/land-plots_c40" class="_457e0fa6 fw-normal">Land &amp;
+                Plots</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/houses_c1721" class="_457e0fa6 fw-normal">Houses</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/apartments-flats_c1725"
+                class="_457e0fa6 fw-normal">Apartments &amp; Flats</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/shops-offices-commercial-space_c1733"
+                class="_457e0fa6 fw-normal">Shops - Offices - Commercial Space</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/portions-floors_c41" class="_457e0fa6 fw-normal">Portions
+                &amp; Floors</a></div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/property-for-rent_c3" class="_457e0fa6 fw-bold">Property
+                for Rent</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/houses_c1719" class="_457e0fa6 fw-normal">Houses</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/portions-floors_c39" class="_457e0fa6 fw-normal">Portions
+                &amp; Floors</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/apartments-flats_c1723"
+                class="_457e0fa6 fw-normal">Apartments &amp; Flats</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/shops-offices-commercial-space_c1731"
+                class="_457e0fa6 fw-normal">Shops - Offices - Commercial Space</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/rooms_c2048" class="_457e0fa6 fw-normal">Rooms</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/vacation-rentals-guest-houses_c1289"
+                class="_457e0fa6 fw-normal">Vacation Rentals - Guest Houses</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/roommates-paying-guests_c1449"
+                class="_457e0fa6 fw-normal">Roommates &amp; Paying Guests</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/land-plots_c1727" class="_457e0fa6 fw-normal">Land &amp;
+                Plots</a></div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/electronics-home-appliances_c99"
+                class="_457e0fa6 fw-bold">Electronics &amp; Home Appliances</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/computers-accessories_c443"
+                class="_457e0fa6 fw-normal">Computers &amp; Accessories</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/televisions-accessories_c708229"
+                class="_457e0fa6 fw-normal">Televisions &amp; Accessories</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/ac-coolers_c1619" class="_457e0fa6 fw-normal">AC &amp;
+                Coolers</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/generators-ups-power-solutions_c1943"
+                class="_457e0fa6 fw-normal">Generators, UPS &amp; Power Solutions</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/fridges-freezers_c1617"
+                class="_457e0fa6 fw-normal">Refrigerators &amp; Freezers</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/cameras-accessories_c727" class="_457e0fa6 fw-normal">Cameras
+                &amp; Accessories</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/games-entertainment_c93" class="_457e0fa6 fw-normal">Games
+                &amp; Entertainment</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/other-home-appliances_c1417"
+                class="_457e0fa6 fw-normal">Other Home Appliances</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/kitchen-appliances_c1930" class="_457e0fa6 fw-normal">Kitchen
+                Appliances</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/tv-video-audio_c729"
+                class="_457e0fa6 fw-normal">Video-Audios</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/fans_c708259" class="_457e0fa6 fw-normal">Fans</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/washing-machines-dryers_c1615"
+                class="_457e0fa6 fw-normal">Washing Machines &amp; Dryers</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/microwaves-ovens_c708282"
+                class="_457e0fa6 fw-normal">Microwaves &amp; Ovens</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/sewing-machines_c708271" class="_457e0fa6 fw-normal">Sewing
+                Machines</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/tools-diy-equipment_c714000"
+                class="_457e0fa6 fw-normal">Tools &amp; DIY Equipment</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/water-dispensers_c708281" class="_457e0fa6 fw-normal">Water
+                Dispensers</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/heaters-geysers_c708260" class="_457e0fa6 fw-normal">Heaters
+                &amp; Geysers</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/irons-steamers_c708268" class="_457e0fa6 fw-normal">Irons
+                &amp; Steamers</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/air-purifiers-humidifiers_c708264"
+                class="_457e0fa6 fw-normal">Air Purifiers &amp; Humidifiers</a></div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/bikes_c1898" class="_457e0fa6 fw-normal">Bikes</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/motorcycles_c81" class="_457e0fa6 fw-normal">Motorcycles</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/bicycles_c1415" class="_457e0fa6 fw-normal">Bicycles</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/spare-parts_c1587" class="_457e0fa6 fw-normal">Spare
+                Parts</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/scooters_c1413" class="_457e0fa6 fw-normal">Scooters</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/bikes-accessories_c707062" class="_457e0fa6 fw-normal">Bikes
+                Accessories</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/atv-quads_c1953" class="_457e0fa6 fw-normal">ATV &amp;
+                Quads</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/bike-care_c718000" class="_457e0fa6 fw-normal">Bike Care</a>
+            </div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/business-industrial-agriculture_c1981"
+                class="_457e0fa6 fw-normal">Business, Industrial &amp; Agriculture</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/other-business-industry_c2000"
+                class="_457e0fa6 fw-normal">Other Business &amp; Industry</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/food-restaurants_c1982" class="_457e0fa6 fw-normal">Food
+                &amp; Restaurants</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/trade-industrial_c2019" class="_457e0fa6 fw-normal">Trade
+                &amp; Industrial Machinery</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/medical-pharma_c2018" class="_457e0fa6 fw-normal">Medical
+                &amp; Pharma</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/business-for-sale_c1997" class="_457e0fa6 fw-normal">Business
+                for Sale</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/construction-heavy-machinery_c1989"
+                class="_457e0fa6 fw-normal">Construction &amp; Heavy Machinery</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/agriculture_c2001"
+                class="_457e0fa6 fw-normal">Agriculture</a></div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/services_c619" class="_457e0fa6 fw-normal">Services</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/other-services_c625" class="_457e0fa6 fw-normal">Other
+                Services</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/education-classes_c1429" class="_457e0fa6 fw-normal">Tuitions
+                &amp; Academies</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/home-office-repair_c2035" class="_457e0fa6 fw-normal">Home
+                &amp; Office Repair</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/car-rental_c2036" class="_457e0fa6 fw-normal">Car Rental</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/maids-domestic-help_c354"
+                class="_457e0fa6 fw-normal">Domestic Help</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/web-development_c522" class="_457e0fa6">Web
+                Development</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/consultancy-services_c707005"
+                class="_457e0fa6 fw-normal">Consultancy Services</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/travel-visa_c1980" class="_457e0fa6 fw-normal">Travel &amp;
+                Visa</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/electronics-computer-repair_c523"
+                class="_457e0fa6 fw-normal">Electronics &amp; Computer Repair</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/drivers-taxi_c356" class="_457e0fa6 fw-normal">Drivers &amp;
+                Taxi</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/construction-services_c707004"
+                class="_457e0fa6 fw-normal">Construction Services</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/farm-fresh-food_c2005" class="_457e0fa6 fw-normal">Farm &amp;
+                Fresh Food</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/event-services_c300" class="_457e0fa6 fw-normal    ">Event
+                Services</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/video-photography_c707009" class="_457e0fa6">Video
+                &amp; Photography</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/health-beauty_c741" class="_457e0fa6">Health &amp;
+                Beauty</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/movers-packers_c1427" class="_457e0fa6">Movers
+                &amp; Packers</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/architecture-interior-design_c707001"
+                class="_457e0fa6">Architecture &amp; Interior Design</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/renting-services_c707007" class="_457e0fa6">Renting
+                Services</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/camera-installation_c707002"
+                class="_457e0fa6">Camera Installation</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/car-services_c707003" class="_457e0fa6">Car
+                Services</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/catering-restaurant_c2047"
+                class="_457e0fa6">Catering &amp; Restaurant</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/tailor-services_c707008" class="_457e0fa6">Tailor
+                Services</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/insurance-services_c707006"
+                class="_457e0fa6">Insurance Services</a></div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/jobs_c4" class="_457e0fa6">Jobs</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/other-jobs_c65" class="_457e0fa6">Other Jobs</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/online_c1737" class="_457e0fa6">Online</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/part-time_c1813" class="_457e0fa6">Part Time</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/sales_c62" class="_457e0fa6">Sales</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/restaurants-and-hospitality_c696908"
+                class="_457e0fa6">Restaurants &amp; Hospitality</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/marketing_c1433" class="_457e0fa6">Marketing</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/education_c53" class="_457e0fa6">Education</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/customer-service_c164" class="_457e0fa6">Customer
+                Service</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/domestic-staff_c2038" class="_457e0fa6">Domestic
+                Staff</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/medical_c2037" class="_457e0fa6">Medical</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/graphic-design_c696905" class="_457e0fa6">Graphic
+                Design</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/accounting-finance_c1441"
+                class="_457e0fa6">Accounting &amp; Finance</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/delivery-riders_c696903" class="_457e0fa6">Delivery
+                Riders</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/it-networking_c56" class="_457e0fa6">IT &amp;
+                Networking</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/clerical-administration_c52"
+                class="_457e0fa6">Clerical &amp; Administration</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/content-writing_c696902" class="_457e0fa6">Content
+                Writing</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/engineering_c696904"
+                class="_457e0fa6">Engineering</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/security_c696909" class="_457e0fa6">Security</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/hotels-tourism_c1439" class="_457e0fa6">Hotels
+                &amp; Tourism</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/manufacturing_c731"
+                class="_457e0fa6">Manufacturing</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/human-resources_c1437" class="_457e0fa6">Human
+                Resources</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/advertising-pr_c1435" class="_457e0fa6">Advertising
+                &amp; PR</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/real-estate_c696907" class="_457e0fa6">Real
+                Estate</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/internships_c696906"
+                class="_457e0fa6">Internships</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/architecture-and-interior-design_c696901"
+                class="_457e0fa6">Architecture &amp; Interior Design</a></div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/animals_c103" class="_457e0fa6">Animals</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/hens-aseel_c1959" class="_457e0fa6">Hens</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/cats_c138" class="_457e0fa6">Cats</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/parrots_c708087" class="_457e0fa6">Parrots</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/pet-food-accessories_c175" class="_457e0fa6">Pet
+                Food &amp; Accessories</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/dogs_c139" class="_457e0fa6">Dogs</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/livestock_c1960" class="_457e0fa6">Livestock</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/pigeons_c708088" class="_457e0fa6">Pigeons</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/rabbits_c708086" class="_457e0fa6">Rabbits</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/fish-aquariums_c1293" class="_457e0fa6">Fish</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/finches_c708089" class="_457e0fa6">Finches</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/birds_c137" class="_457e0fa6">Other Birds</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/ducks_c708092" class="_457e0fa6">Ducks</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/other-animals_c140" class="_457e0fa6">Other
+                Animals</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/fertile-eggs_c708093" class="_457e0fa6">Fertile
+                Eggs</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/doves_c708090" class="_457e0fa6">Doves</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/peacocks_c708091" class="_457e0fa6">Peacocks</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/horses_c2022" class="_457e0fa6">Horses</a></div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/furniture-home-decor_c628"
+                class="_457e0fa6">Furniture &amp; Home Decor</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/sofa-chairs_c1593" class="_457e0fa6">Sofa &amp;
+                Chairs</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/beds-wardrobes_c1591" class="_457e0fa6">Beds &amp;
+                Wardrobes</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/other-household-items_c293" class="_457e0fa6">Other
+                Household Items</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/tables-dining_c1954" class="_457e0fa6">Tables &amp;
+                Dining</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/office-furniture_c2028" class="_457e0fa6">Office
+                Furniture</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/home-decoration_c575" class="_457e0fa6">Home
+                Decoration</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/garden-outdoor_c1958" class="_457e0fa6">Garden
+                &amp; Outdoor</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/painting-mirrors_c1955" class="_457e0fa6">Painting
+                &amp; Mirrors</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/rugs-carpets_c1957" class="_457e0fa6">Rugs &amp;
+                Carpets</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/curtains-blinds_c1956" class="_457e0fa6">Curtains
+                &amp; Blinds</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/bathroom-accessories_c707105"
+                class="_457e0fa6">Bathroom Accessories</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/lighting_c2029" class="_457e0fa6">Lighting</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/home-diy-renovations_c718002"
+                class="_457e0fa6">Home DIY &amp; Renovations</a></div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/fashion-beauty_c87" class="_457e0fa6">Fashion &amp;
+                Beauty</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/clothes_c642" class="_457e0fa6">Clothes</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/watches_c1970" class="_457e0fa6">Watches</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/wedding_c1971" class="_457e0fa6">Wedding</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/footwear_c224" class="_457e0fa6">Footwear</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/skin-hair_c1972" class="_457e0fa6">Skin &amp;
+                Hair</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/jewellery_c1974" class="_457e0fa6">Jewellery</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/fragrance_c706501" class="_457e0fa6">Fragrance</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/bags_c706500" class="_457e0fa6">Bags</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/make-up_c1973" class="_457e0fa6">Makeup</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/bath-body_c715000" class="_457e0fa6">Bath &amp;
+                Body</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/accessories_c506" class="_457e0fa6">Fashion
+                Accessories</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/other-fashion_c2033" class="_457e0fa6">Other
+                Fashion</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/diy-jewellery_c718004" class="_457e0fa6">DIY
+                Jewellery</a></div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/books-sports-hobbies_c767" class="_457e0fa6">Books,
+                Sports &amp; Hobbies</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/books-magazines_c453" class="_457e0fa6">Books &amp;
+                Magazines</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/gym-fitness_c771" class="_457e0fa6">Gym &amp;
+                Fitness</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/sports-equipment_c100" class="_457e0fa6">Sports
+                Equipment</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/other-hobbies_c755" class="_457e0fa6">Other
+                Hobbies</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/musical-instruments_c714" class="_457e0fa6">Musical
+                Instruments</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/arts-crafts_c716001" class="_457e0fa6">Arts &amp;
+                Crafts</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/collectables_c716004"
+                class="_457e0fa6">Collectables</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/crafts-diy-supplies_c716003"
+                class="_457e0fa6">Crafts &amp; DIY Supplies</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/camping-hiking_c716002" class="_457e0fa6">Camping
+                &amp; Hiking</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/calendars_c716000" class="_457e0fa6">Calendars</a>
+            </div>
+          </div>
+          <div class="_29123282">
+            <div class="_400f82a4"><a href="/federal-b-area_g5001513/kids_c88" class="_457e0fa6">Kids</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/toys_c1977" class="_457e0fa6">Toys</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/kids-vehicles_c1979" class="_457e0fa6">Kids
+                Vehicles</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/baby-gear_c707086" class="_457e0fa6">Baby Gear</a>
+            </div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/swings-slides_c1978" class="_457e0fa6">Swings &amp;
+                Slides</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/kids-furniture_c231" class="_457e0fa6">Kids
+                Furniture</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/kids-accessories_c235" class="_457e0fa6">Kids
+                Accessories</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/kids-clothing_c707088" class="_457e0fa6">Kids
+                Clothing</a></div>
+            <div class="_64aaa26e"><a href="/federal-b-area_g5001513/bath-and-diapers_c707087" class="_457e0fa6">Bath
+                &amp; Diapers</a></div>
+          </div>
+        </div>
+      </div> -->
+
+        <div id="carouselExampleAutoplaying" class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/527654309-800x600.webp" class="d-block w-100" alt="carousel image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/527654309-800x600.webp" class="d-block w-100" alt="carousel image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/527654309-800x600.webp" class="d-block w-100" alt="carousel image 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+
+
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="./image/mobiles.73f961c6ad58605c032eb7c2cf12aeaa.png" alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">mobiles</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/vehicles.354a5ebfb7f21e87991a277dd4b40f4b.png" alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">vehicles</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/property-for-sale.69b01e8dafc182fa3bd469d0ed4fc801.png"
+                            alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">property for sale</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/property-for-rent.49f99cc528b9b88da4f33fbe1f0b3346.png"
+                            alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">property for rent</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/electronics-home-appliances.0a30101e6fd7d9ccc8cd6b85b9b44cee.png"
+                            alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">electronics & home appliances</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/bikes.0a5064ae987f3bd72801b7bc2c3b6e02.png" alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">bikes</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/business-industrial-agriculture.2ec28979a1bde0183c777a0ce51b37c6.png"
+                            alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">business industrial & agriculture</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/services.23d8eb1535f319324813848887961a59.png" alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">services</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/jobs.dc882b8ff65e94850cc12f5abd605420.png" alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">jobs</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/animals.476fa9caaf88a12dfbcd6db4c8c6f17a.png" alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">animals</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/furniture-home-decor.47a1998de5f4a8a9e84702dcb40bb313.png"
+                            alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">furniture & home decor</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/fashion-beauty.6ef7c1f060c92b55a6b28bfcfb16a1d2.png"
+                            alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">fashion & beauty</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/books-sports-hobbies.9406daf905b451fa283048652f414054.png"
+                            alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">books, sports & hobbies</div>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+
+                    <div class="img-rap"><img style="background-color: f2f4f5;border-radius: 5px;" width="100px"
+                            src="https://www.olx.com.pk/assets/kids.5de42a58bc91f81fa22ccc401d7ac285.png" alt="">
+                    </div>
+                    <div class="cap text-center fw-bold">kids</div>
+
+                </div>
+
+            </div>
+
+            <!-- cards -->
+            <!-- mobiles -->
+            <div class="row mt-3 crd-mq w-100 bg-light" id="mobile">
+                <div class="d-flex justify-content-between">
+                    <div class="fw-bold">mobiles</div>
+                    <div class="fw-bold text-primary">view more</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/jonas-lee-o6elTKWZ5bI-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:70000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 14 pro max premium quality</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/william-hook-9e9PD9blAto-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:79000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 12 pro max premium quality</p>
+                            <a href="#" class="fw-normal">jamshed road karachi</a>
+                            <h6 class="fs-6">13 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3 ">
+                    <div class="card">
+                        <img src="./image/jonas-lee-o6elTKWZ5bI-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:69000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">samsung ultra 240 premium quality</p>
+                            <a href="#" class="fw-normal">fb area karachi</a>
+                            <h6 class="fs-6">2 days ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/mbls.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:97000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 16 pro max premium quality</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- carousel -->
+            <div id="carouselExampleAutoplaying" class="carousel slide container my-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://tpc.googlesyndication.com/simgad/7871648261363700551" class="d-block w-100"
+                            alt="carousel image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tpc.googlesyndication.com/simgad/7871648261363700551" class="d-block w-100"
+                            alt="carousel image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tpc.googlesyndication.com/simgad/7871648261363700551" class="d-block w-100"
+                            alt="carousel image 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+            <!-- cars -->
+            <div class="row mt-3 crd-mq w-100 bg-light" id="cars">
+                <div class="d-flex justify-content-between">
+                    <div class="fw-bold">cars</div>
+                    <div class="fw-bold text-primary">view more</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/dhiva-krishna-X16zXcbxU4U-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:7000000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">marcedes</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/campbell-3ZUsNJhi_Ik-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:7900000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">lamborghini </p>
+                            <a href="#" class="fw-normal">jamshed road karachi</a>
+                            <h6 class="fs-6">13 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3 ">
+                    <div class="card">
+                        <img src="./image/zan-lazarevic-1BWBiUUT-AA-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:6900000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">porshe</p>
+                            <a href="#" class="fw-normal">fb area karachi</a>
+                            <h6 class="fs-6">2 days ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/kahl-orr-ZdLFPE0AZBU-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:970000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">tesla</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- bikes -->
+            <div class="row mt-3 crd-mq w-100 bg-light" id="motorcycle">
+                <div class="d-flex justify-content-between">
+                    <div class="fw-bold">motorcycles and bikes</div>
+                    <div class="fw-bold text-primary">view more</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/bike/alex-9sGmjIlqHuI-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:700000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">honda g2 o 125 kawasaki heavy bike</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/bike/lino-C2SzUyg3PPQ-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:790000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">honda g2 o 125 kawasaki heavy bike</p>
+                            <a href="#" class="fw-normal">jamshed road karachi</a>
+                            <h6 class="fs-6">13 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3 ">
+                    <div class="card">
+                        <img src="./image/bike/harley-davidson-eeTJKC_wz34-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:69000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">honda g2 o 125 kawasaki heavy bike</p>
+                            <a href="#" class="fw-normal">fb area karachi</a>
+                            <h6 class="fs-6">2 days ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/bike/lino-C2SzUyg3PPQ-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:97000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">honda g2 o 125 kawasaki heavy bike</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- houses -->
+            <div class="row mt-3 crd-mq w-100 bg-light" id="house">
+                <div class="d-flex justify-content-between">
+                    <div class="fw-bold">houses</div>
+                    <div class="fw-bold text-primary">view more</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/houses/tasha-kostyuk-2dg-gFw0TFA-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:10crore</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 14 pro max premium quality</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/houses/marie-m-DeRko_Q2dYQ-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:7 crore</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 12 pro max premium quality</p>
+                            <a href="#" class="fw-normal">jamshed road karachi</a>
+                            <h6 class="fs-6">13 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3 ">
+                    <div class="card">
+                        <img src="./image/houses/marie-m-DeRko_Q2dYQ-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:16 crore</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">samsung ultra 240 premium quality</p>
+                            <a href="#" class="fw-normal">fb area karachi</a>
+                            <h6 class="fs-6">2 days ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/houses/tasha-kostyuk-2dg-gFw0TFA-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:97000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 16 pro max premium quality</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- vedio audio -->
+            <div class="row mt-3 crd-mq w-100 bg-light" id="vedio-audios">
+                <div class="d-flex justify-content-between">
+                    <div class="fw-bold">vedio-audios</div>
+                    <div class="fw-bold text-primary">view more</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/vedio/francis-bouffard-HADKIO0EFXQ-unsplash.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:70000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 14 pro max premium quality</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/vedio/francis-bouffard-HADKIO0EFXQ-unsplash.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:79000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 12 pro max premium quality</p>
+                            <a href="#" class="fw-normal">jamshed road karachi</a>
+                            <h6 class="fs-6">13 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3 ">
+                    <div class="card">
+                        <img src="./image/vedio/francis-bouffard-HADKIO0EFXQ-unsplash.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:69000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">samsung ultra 240 premium quality</p>
+                            <a href="#" class="fw-normal">fb area karachi</a>
+                            <h6 class="fs-6">2 days ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./image/vedio/francis-bouffard-HADKIO0EFXQ-unsplash.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:97000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 16 pro max premium quality</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- tablets -->
+
+            <div class="row mt-3 crd-mq w-100 bg-light" id="tablet">
+                <div class="d-flex justify-content-between">
+                    <div class="fw-bold">tablets</div>
+                    <div class="fw-bold text-primary">view more</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1623126908029-58cb08a2b272?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRhYmxldHxlbnwwfHwwfHx8MA%3D%3D"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:70000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 14 pro max premium quality</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1648737966636-2fc3a5fffc8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8dGFibGV0fGVufDB8fDB8fHww"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:79000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 12 pro max premium quality</p>
+                            <a href="#" class="fw-normal">jamshed road karachi</a>
+                            <h6 class="fs-6">13 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3 ">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1623126908029-58cb08a2b272?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRhYmxldHxlbnwwfHwwfHx8MA%3D%3D"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:69000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">samsung ultra 240 premium quality</p>
+                            <a href="#" class="fw-normal">fb area karachi</a>
+                            <h6 class="fs-6">2 days ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1648737966636-2fc3a5fffc8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MXx8dGFibGV0fGVufDB8fDB8fHww"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:97000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 16 pro max premium quality</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- jobs -->
+
+            <div class="row mt-3 crd-mq w-100 bg-light" id="mobile">
+                <div class="d-flex justify-content-between">
+                    <div class="fw-bold">jobs</div>
+                    <div class="fw-bold text-primary">view more</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am9ic3xlbnwwfHwwfHx8MA%3D%3D"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:70000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 14 pro max premium quality</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b21906?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8am9ic3xlbnwwfHwwfHx8MA%3D%3D"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:79000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 12 pro max premium quality</p>
+                            <a href="#" class="fw-normal">jamshed road karachi</a>
+                            <h6 class="fs-6">13 hours ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mb-3 ">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8am9ic3xlbnwwfHwwfHx8MA%3D%3D"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:69000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">samsung ultra 240 premium quality</p>
+                            <a href="#" class="fw-normal">fb area karachi</a>
+                            <h6 class="fs-6">2 days ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b21906?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8am9ic3xlbnwwfHwwfHx8MA%3D%3D"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title fw-bold">rs:97000</h5>
+                                <div class=""><i class="fa-regular fa-heart hrt"></i></div>
+                            </div>
+                            <p class="card-text">iphone 16 pro max premium quality</p>
+                            <a href="#" class="fw-normal">tariq road karachi</a>
+                            <h6 class="fs-6">11 hours ago</h6>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- carousel -->
+            <div id="carouselExampleAutoplaying" class="carousel slide container my-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://tpc.googlesyndication.com/simgad/7871648261363700551" class="d-block w-100"
+                            alt="carousel image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tpc.googlesyndication.com/simgad/7871648261363700551" class="d-block w-100"
+                            alt="carousel image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://tpc.googlesyndication.com/simgad/7871648261363700551" class="d-block w-100"
+                            alt="carousel image 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+
+            <!-- social icons -->
+            <section class="social-parent d-flex justify-content-between">
+                <div><img width="200px"
+                        src="https://www.olx.com.pk/assets/olx-mobile-app.dfa5b83f01c6e269aca19a3faff716a6.webp" alt="">
+                </div>
+                <div><img width="100px" class="m-3"
+                        src="./image/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg" alt=""><img
+                        width="100px" class="m-3"
+                        src="./image/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg" alt=""><img
+                        width="100px" class="m-3"
+                        src="./image/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg" alt="">
+                </div>
+            </section>
+            <!-- footer -->
+
+
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-3 mb-3">
+                        <h6>popular categories</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" style="color: #002F34;">cars</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">mobile phones</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">flat for rent</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">jobs</a></li>
+                          
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h6>trending searches</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">bikes</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">watches</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">books</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">dogs</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h6>about us</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">about dubizzle group</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">olx blog</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">contact us</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">olx for business</a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h6>olx</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">help</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">site map</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">term of use</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">privacy policy</a></li>
+                           
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <h6 >follow us</h6>
+                        <ul class="nav flex-row d-flex justify-content-between">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-x-twitter tweet"></i></a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-facebook tweet face"></i></a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-youtube tweet ytb"></i></a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><i class="fa-brands fa-instagram tweet insta"></i></a></li>
+                           
+                        </ul>
+                    </div>
+                  
+                </div>
+                <div style="background-color: #002F34;text-align: right !important;" class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 text-light  fw-bold border-top">
+                    <p class="px-3 my-para" style="text-align: right !important;">© 2025 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi"
+                                    width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi"
+                                    width="24" height="24" aria-hidden="true">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </footer>
+
+
+            <!-- container div -->
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
